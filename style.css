@@ -1,0 +1,287 @@
+.z1{
+    border: 1px solid red;
+    width: 400px;
+    height: 100px;
+    background: #fff;
+    margin-bottom: 10px;
+
+    transition: background 2s ease;
+}
+.z1:hover{
+    background: red;
+    color: #fff;
+}
+.z2{
+    border: 1px solid red;
+    width: 400px;
+    height: 100px;
+    background: #fff;
+    color: red;
+    margin-bottom: 10px;
+
+    transition: background 2s ease;
+}
+.z2:hover{
+    background: red;
+    color: #fff;
+}
+.z3{
+    border: 1px solid red;
+    width: 400px;
+    height: 100px;
+    background: #fff;
+    margin-bottom: 10px;
+
+    transition: width 1s ease ;
+}
+.z3:hover{
+    width: 100%;
+}
+.z4{
+    border: 1px solid red;
+    width: 400px;
+    height: 100px;
+    background: #fff;
+    color: red;
+    margin-bottom: 10px;
+
+    transition: width 1s ease, font-size 1s ease;
+}
+.z4:hover{
+    width: 100%;
+    font-size: xx-large;
+}
+.z5{
+    border: 1px solid red;
+    width: 400px;
+    height: 100px;
+    background: #fff;
+    margin-bottom: 10px;
+
+    transition: width 1s ease 0.2s, margin-left 1s ease ;
+}
+.z5:hover{
+    width: 800px;
+    margin-left: 150px;
+}
+.z6{
+    border: 1px solid red;
+    width: 400px;
+    height: 100px;
+    background: #fff;
+    text-align: center;
+    line-height: 100px;
+    text-indent: 2000px;
+    white-space: nowrap;
+    margin-bottom: 10px;
+
+    transition: text-indent 1s linear;
+}
+.z6:hover{
+    color:#000;
+    text-indent: 0;
+}
+.z7{
+    border: 1px solid red;
+    width: 400px;
+    height: 100px;
+    background: #fff;
+    margin-bottom: 10px;
+
+    transition: width 2s linear 2s;
+}
+.z7:hover{
+    width: 100%;
+}
+input{
+    width: 200px;
+    height: 30px;
+    margin-bottom: 10px;
+
+    transition: all 1s ease-out;
+}
+input:focus{
+    width: 25%;
+    box-shadow: 1px 1px 3px;
+    color: blue;
+}
+.z9{
+    border: 1px solid green;
+    padding: 50px;
+    margin-bottom: 10px;
+}
+.z9 div{
+    background: white;
+	border: 1px solid red;
+    width: 30%;
+	height: 30px;
+    margin-bottom: 50px;
+
+    transition: all 1s ease-out;
+}
+.z9 div:last-child{
+	margin-bottom: 0;
+}
+.z9:hover div{ 
+	width: 100%;
+}
+.z10-1{
+    border: 1px solid green;
+    padding: 50px 50px 30px 50px;
+    margin-bottom: 20px;
+}
+.z10{
+    background: white;
+	border: 1px solid red;
+    width: 400px;
+	height: 30px;
+    margin-bottom: 20px;
+
+    transition: all 1s ease-out;
+}
+
+.z10:hover+.z10{ 
+	width: 50%;
+}
+.z11-1{
+    border: 1px solid green;
+    padding: 50px 50px 30px 50px;
+    margin-bottom: 20px;
+}
+.z11{
+    background: white;
+	border: 1px solid red;
+    width: 400px;
+	height: 30px;
+    margin-bottom: 20px;
+
+    transition: all 1s ease-out;
+}
+.z11:hover~.z11{ 
+	width: 50%;
+}
+.z12-1{
+    border: 1px solid green;
+    padding: 50px 50px 30px 50px;
+    margin-bottom: 20px;
+}
+.z12{
+    background: white;
+	border: 1px solid red;
+    width: 400px;
+	height: 30px;
+    margin-bottom: 20px;
+
+    transition: all 1s ease-out;
+}
+.z12:hover+.z12+.z12{ 
+	width: 50%;
+}
+.z13{
+    border: 1px solid green;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.first{
+    background: white;
+    border: 1px solid red;
+    padding: 10px;
+}
+.second{
+    background: red;
+	width: 300px;
+	height: 30px;
+	line-height: 30px;
+	margin: 20px 0px 0px -400px;
+    padding: 10px;
+	text-align: center;
+	color: white;
+
+    transition: all 1s ease-out;
+}
+.first:hover+.second{
+    margin-left: 30%;
+}
+.z14{
+    border: 1px solid green;
+    padding: 15px 45px;
+    margin-bottom: 20px;
+}
+.z14-1, .z14-2{
+    background: white;
+    border: 1px solid red;
+    width: 10%;
+    height: 20px;
+    padding: 5px;
+    margin: 10px;
+}
+
+.z14-1{
+    transition: width 2s steps(5, start);
+}
+.z14-2{
+    transition: width 2s steps(5, end);
+}
+.z14:hover div{
+    width: 100%;
+}
+.z15{
+    background: white;
+    border: 1px solid red;
+    width: 20%; 
+    height: 30px;
+    
+    transition: width 3s cubic-bezier(.20,-0.4,0,.81);
+    /*пришлось подсмотреть*/
+}
+.z15:hover{
+    width: 100%;
+}
+.z16{
+    background: white;
+    border: 1px solid red;
+    width: 50%; 
+    height: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.z16-1{
+    background: red;
+    width: 0;
+    height: 30px;  
+
+    transition: all 2s linear;
+}
+.z16:hover div{
+    width: 100%;
+}
+.z17{
+    border: 1px solid red;
+    width: 50%; 
+    height: 30px;
+    margin: 0 auto;
+}
+.z17-1{
+    background: red;
+    width: 0%;
+    height: 30px;  
+
+    transition: all 3s steps(5, start);
+}
+.z17:hover div{
+    width: 100%;
+}
+.z18{
+    background: white;
+    border: 1px solid red;
+    width: 100px;
+    height: 30px;
+    margin: 100px auto;
+
+    transition: all 1s linear;
+    box-shadow: -70px 70px black, 70px -70px black;
+}
+.z18:hover{
+    box-shadow: 70px 70px black, 70px 70px black;
+}
+/*пришлось подсмотреть последние, а в 19 задании не поняла что нужно сделать*/
